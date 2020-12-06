@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/MultiSnake/static/css/main.ab7136cd.chunk.css",
-    "main.js": "/MultiSnake/static/js/main.c03c403e.chunk.js",
-    "main.js.map": "/MultiSnake/static/js/main.c03c403e.chunk.js.map",
-    "runtime-main.js": "/MultiSnake/static/js/runtime-main.41ec70b2.js",
-    "runtime-main.js.map": "/MultiSnake/static/js/runtime-main.41ec70b2.js.map",
-    "static/js/2.77b6718d.chunk.js": "/MultiSnake/static/js/2.77b6718d.chunk.js",
-    "static/js/2.77b6718d.chunk.js.map": "/MultiSnake/static/js/2.77b6718d.chunk.js.map",
+    "main.js": "/MultiSnake/static/js/main.2d3de208.chunk.js",
+    "main.js.map": "/MultiSnake/static/js/main.2d3de208.chunk.js.map",
+    "runtime-main.js": "/MultiSnake/static/js/runtime-main.1f683df5.js",
+    "runtime-main.js.map": "/MultiSnake/static/js/runtime-main.1f683df5.js.map",
+    "static/js/2.d5af53d5.chunk.js": "/MultiSnake/static/js/2.d5af53d5.chunk.js",
+    "static/js/2.d5af53d5.chunk.js.map": "/MultiSnake/static/js/2.d5af53d5.chunk.js.map",
     "index.html": "/MultiSnake/index.html",
     "static/css/main.ab7136cd.chunk.css.map": "/MultiSnake/static/css/main.ab7136cd.chunk.css.map",
-    "static/js/2.77b6718d.chunk.js.LICENSE.txt": "/MultiSnake/static/js/2.77b6718d.chunk.js.LICENSE.txt"
+    "static/js/2.d5af53d5.chunk.js.LICENSE.txt": "/MultiSnake/static/js/2.d5af53d5.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.41ec70b2.js",
-    "static/js/2.77b6718d.chunk.js",
+    "static/js/runtime-main.1f683df5.js",
+    "static/js/2.d5af53d5.chunk.js",
     "static/css/main.ab7136cd.chunk.css",
-    "static/js/main.c03c403e.chunk.js"
+    "static/js/main.2d3de208.chunk.js"
   ]
 }
