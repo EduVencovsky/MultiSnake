@@ -1,0 +1,13 @@
+{
+  "name": "multi-snake",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "author": "Eduardo Vencovsky <eduvencovsky@gmail.com>",
+  "license": "MIT"
+}
