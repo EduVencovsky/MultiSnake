@@ -1,1 +1,1 @@
-web: cd packages/server/ && npm i && npm start
+web: cd packages/server/ && npm i yarn -g && yarn && yarn start
