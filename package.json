@@ -3,11 +3,16 @@
   "version": "1.0.0",
   "main": "index.js",
   "private": true,
+  "author": "Eduardo Vencovsky <eduvencovsky@gmail.com>",
+  "license": "MIT",
   "workspaces": {
     "packages": [
       "packages/*"
     ]
   },
-  "author": "Eduardo Vencovsky <eduvencovsky@gmail.com>",
-  "license": "MIT"
+  "cacheDirectories": [
+    "packages/server/node_modules", 
+    "packages/web/node_modules", 
+    "node_modules"
+  ]
 }
