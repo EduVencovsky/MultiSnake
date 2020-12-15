@@ -9,11 +9,13 @@ on:
     paths:
       - 'packages/game/**'
       - 'packages/web/**'
+      - '.github/**'
   pull_request:
     branches: [ master ]
     paths:
       - 'packages/game/**'
       - 'packages/web/**'
+      - '.github/**'
 
 jobs:
   build:
