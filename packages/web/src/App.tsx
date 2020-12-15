@@ -63,6 +63,7 @@ function App() {
   const socket = useRef(socketConnection)
 
   useEffect(() => {
+    console.log('SERVER_WS_URI', SERVER_WS_URI)
     socket.current.io.on("connect", () => {
       console.log(`connect ${socket.current.id}`);
     });
