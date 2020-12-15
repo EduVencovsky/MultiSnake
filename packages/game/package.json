@@ -2,5 +2,8 @@
   "name": "@multi-snake/game",
   "version": "1.0.1",
   "main": "index.ts",
-  "license": "MIT"
+  "license": "MIT",
+  "engines": {
+    "node": "14.x"
+  }
 }
