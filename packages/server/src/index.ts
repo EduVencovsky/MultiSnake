@@ -1,8 +1,19 @@
 import { Direction, Player } from "@multi-snake/game";
 import { Server, Socket } from "socket.io"
 import { movePlayerDirection, startGame, stopGame } from "./game"
+import express from 'express'
+import packageJson from 'package.json'
 
-const io = new Server(parseInt(process.env.PORT ?? '4000'), { cors: { origin: '*' } });
+const app = express()
+const port = parseInt(process.env.PORT ?? '4000')
+
+app.get('/', (_, res) => {
+  res.send(`Running version ${packageJson.version}`)
+})
+
+app.listen(port, () => console.log(`App running on port ${port}.`))
+
+const io = new Server(port, { cors: { origin: '*' } });
 
 type PlayerList = {
   [key: string]: Player['id']
