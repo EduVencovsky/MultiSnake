@@ -16,6 +16,9 @@
       "*/web/*"
     ]
   },
+  "engines": {
+    "node": "14.x"
+  },
   "cacheDirectories": [
     "packages/server/node_modules", 
     "packages/web/node_modules", 
