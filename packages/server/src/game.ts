@@ -187,7 +187,7 @@ export const startGame = (io: Server, players: [Player['id'], Player['id']]) => 
       players: currentPlayers,
       winner: currentWinner
     }
-    // console.log(currentBoard.flat().filter(x => x.player).map(x => x.position))
+    
     for (const player of players) {
       io.to(player).emit('game-status', gameStatus)
     }

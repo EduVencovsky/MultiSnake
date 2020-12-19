@@ -63,7 +63,6 @@ function App() {
   const socket = useRef(socketConnection)
 
   useEffect(() => {
-    console.log('SERVER_WS_URI', SERVER_WS_URI)
     socket.current.io.on("connect", () => {
       console.log(`connect ${socket.current.id}`);
     });
@@ -103,8 +102,6 @@ function App() {
   useKeyPress('ArrowRight', onArrowRight)
   useKeyPress('ArrowUp', onArrowUp)
   useKeyPress('ArrowDown', onArrowDown)
-
-  console.log('board', board)
 
   return (
     <div className="App">
