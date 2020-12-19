@@ -3,10 +3,12 @@ import { Server, Socket } from "socket.io"
 import { movePlayerDirection, startGame, stopGame } from "./game"
 import express from 'express'
 import packageJson from 'package.json'
+import cors from 'cors'
 
 const app = express()
 const port = parseInt(process.env.PORT ?? '4000')
 
+app.use(cors())
 app.get('/', (_, res) => {
   res.send(`Running version ${packageJson.version}`)
 })
