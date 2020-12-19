@@ -1,10 +1,10 @@
-import React, { useCallback, useEffect, useRef, useState } from 'react';
-import './App.css';
+import React, { useCallback, useEffect, useRef, useState } from 'react'
+import { Manager } from "socket.io-client"
+import { GameTile, Player, Tile } from './components/GameTile'
+import { useKeyPress } from './hooks/useKeyPress'
+import { SERVER_WS_URI } from './utils'
 
-import { Manager } from "socket.io-client";
-import { GameTile, Player, Tile } from './components/GameTile';
-import { useKeyPress } from './hooks/useKeyPress';
-import { SERVER_WS_URI } from './utils';
+import './App.css'
 
 type Board = Tile[][]
 
