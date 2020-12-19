@@ -9,7 +9,12 @@
     "packages": [
       "packages/*"
     ],
-    "nohoist": ["**/web/**"]
+    "nohoist": [
+      "**/web",
+      "**/web/**",
+      "*/web",
+      "*/web/*"
+    ]
   },
   "cacheDirectories": [
     "packages/server/node_modules", 
