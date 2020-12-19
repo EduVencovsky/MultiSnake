@@ -1,1 +1,0 @@
-web: cd packages/server/ && npm i yarn -g && yarn && yarn start
