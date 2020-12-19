@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node dist/index.js",
     "watch": "tsc -w",
-    "postinstall": "npm run tsc",
+    "postinstall": "yarn tsc",
     "tsc": "tsc",
     "dev": "nodemon dist/index.js",
     "push-heroku": "git subtree push --prefix server heroku master"
