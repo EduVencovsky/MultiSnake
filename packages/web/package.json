@@ -2,7 +2,7 @@
   "name": "@multi-snake/web",
   "version": "1.0.1",
   "private": true,
-  "homepage": "https://eduvencovsky.github.io/MultiSnake/",
+  "homepage": "https://eduvencovsky.github.io/multi-snake/",
   "dependencies": {
     "@multi-snake/game": "*",
     "@emotion/react": "^11.1.1",
