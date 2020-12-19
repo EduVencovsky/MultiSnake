@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/MultiSnake/static/css/main.ab7136cd.chunk.css",
-    "main.js": "/MultiSnake/static/js/main.4db9ac6c.chunk.js",
-    "main.js.map": "/MultiSnake/static/js/main.4db9ac6c.chunk.js.map",
+    "main.js": "/MultiSnake/static/js/main.050fb4a0.chunk.js",
+    "main.js.map": "/MultiSnake/static/js/main.050fb4a0.chunk.js.map",
     "runtime-main.js": "/MultiSnake/static/js/runtime-main.ca8e3036.js",
     "runtime-main.js.map": "/MultiSnake/static/js/runtime-main.ca8e3036.js.map",
-    "static/js/2.ef71a8ff.chunk.js": "/MultiSnake/static/js/2.ef71a8ff.chunk.js",
-    "static/js/2.ef71a8ff.chunk.js.map": "/MultiSnake/static/js/2.ef71a8ff.chunk.js.map",
+    "static/js/2.3513360c.chunk.js": "/MultiSnake/static/js/2.3513360c.chunk.js",
+    "static/js/2.3513360c.chunk.js.map": "/MultiSnake/static/js/2.3513360c.chunk.js.map",
     "index.html": "/MultiSnake/index.html",
     "static/css/main.ab7136cd.chunk.css.map": "/MultiSnake/static/css/main.ab7136cd.chunk.css.map",
-    "static/js/2.ef71a8ff.chunk.js.LICENSE.txt": "/MultiSnake/static/js/2.ef71a8ff.chunk.js.LICENSE.txt"
+    "static/js/2.3513360c.chunk.js.LICENSE.txt": "/MultiSnake/static/js/2.3513360c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.ca8e3036.js",
-    "static/js/2.ef71a8ff.chunk.js",
+    "static/js/2.3513360c.chunk.js",
     "static/css/main.ab7136cd.chunk.css",
-    "static/js/main.4db9ac6c.chunk.js"
+    "static/js/main.050fb4a0.chunk.js"
   ]
 }
