@@ -10,7 +10,8 @@
     "postinstall": "npm run build",
     "build": "tsc",
     "dev": "nodemon dist/index.js",
-    "push-heroku": "git subtree push --prefix server heroku master"
+    "push-heroku": "git subtree push --prefix server heroku master",
+    "heroku-logs": "heroku logs -a venkos-multi-snake --tail"    
   },
   "engines": {
     "node": "14.x"
