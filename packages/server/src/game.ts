@@ -2,8 +2,9 @@ import { Server } from "socket.io"
 import { createPlayer } from "./player"
 import { getRandomInt } from "./utils"
 import { Board, BoardPosition, Direction, GameSettings, GameStatus, Player } from '@multi-snake/game'
+
 const defaultSettings = {
-  gameTick: 100,
+  gameTick: 75,
   boardX: 20,
   boardY: 20,
   defaultFruitsCount: 1
@@ -52,7 +53,10 @@ export const getNewBoard = (): Board =>
       .map((__, y) => ({ player: null, fruit: false, empty: true, position: [x, y] }))
     )
 
-const getPlayerNextPosition = (player: Player): BoardPosition => {
+const getPlayerNextPosition = (player: Player): BoardPosition => {  
+  if (!isOpositeDirection(player.nextDirection, player.direction)) {
+    player.direction = player.nextDirection
+  }
   const currentDirection = player.direction
   const snakeHead = player.snake[player.snake.length - 1]
   let x = snakeHead[0]
@@ -72,7 +76,7 @@ const getPlayerNextPosition = (player: Player): BoardPosition => {
 const movePlayer = (player: Player, removeTail: boolean = true) => {
   if (removeTail) {
     player.snake.shift()
-  }
+  }  
   const nextPosition = getPlayerNextPosition(player)
   player.snake.push(nextPosition)
   return player
@@ -199,10 +203,8 @@ export const startGame = (io: Server, players: [Player['id'], Player['id']]) => 
 
 export const movePlayerDirection = (playerId: Player['id'], direction: Direction) => {
   let player = currentPlayers.find(x => x.id === playerId)
-  if (player?.snake) {
-    if (!isOpositeDirection(direction, player.direction)) {
-      player.direction = direction
-    }
+  if (player) {
+    player.nextDirection = direction
   }
 }
 

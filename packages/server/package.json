@@ -10,7 +10,7 @@
     "prestart": "npm run build",
     "postinstall": "npm run build",
     "build": "tsc",
-    "dev": "nodemon dist/index.js",
+    "dev": "nodemon dist/src/index.js",    
     "push-heroku": "git subtree push --prefix server heroku master",
     "heroku-logs": "heroku logs -a venkos-multi-snake --tail"    
   },

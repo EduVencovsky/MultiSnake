@@ -33,5 +33,6 @@ export type Direction = 'up' | 'down' | 'left' | 'right'
 export type Player = {
   id: string
   direction: Direction
+  nextDirection: Direction
   snake: BoardPosition[]
 }

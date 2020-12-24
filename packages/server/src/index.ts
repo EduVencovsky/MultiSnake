@@ -1,11 +1,14 @@
 import { Direction, Player } from "@multi-snake/game";
 import { Server, Socket } from "socket.io"
 import { movePlayerDirection, startGame, stopGame } from "./game"
+import http from 'http'
 import express from 'express'
-import packageJson from 'package.json'
+import packageJson from '../package.json'
 import cors from 'cors'
 
 const app = express()
+const server = http.createServer(app);
+
 const port = parseInt(process.env.PORT ?? '4000')
 
 app.use(cors())
@@ -13,9 +16,7 @@ app.get('/', (_, res) => {
   res.send(`Running version ${packageJson.version}`)
 })
 
-app.listen(port, () => console.log(`App running on port ${port}.`))
-
-const io = new Server(port, { cors: { origin: '*' } });
+const io = new Server(server, { cors: { origin: '*' } });
 
 type PlayerList = {
   [key: string]: Player['id']
@@ -37,8 +38,7 @@ io.on("connection", (socket: Socket) => {
     // Start game
     startGame(io, [player1, player2])
   }
-  socket.on('move-player', (playerId: Player['id'], direction: Direction) => {
-    console.log('playerId', playerId)
+  socket.on('move-player', (playerId: Player['id'], direction: Direction) => {    
     movePlayerDirection(playerId, direction)
   })
 
@@ -50,3 +50,5 @@ io.on("connection", (socket: Socket) => {
     console.log(`player ${socket.id} disconnected`);
   });
 });
+
+server.listen(port, () => console.log(`App running on port ${port}.`))
