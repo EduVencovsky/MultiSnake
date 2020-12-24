@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "tsc && node dist/src/index.js",
+    "start": "node dist/src/index.js",
     "watch": "tsc -w",  
-    "build": "tsc",
+    "postinstall": "yarn build",
+    "build": "echo tsc && tsc",
     "heroku-postbuild": "tsc",
     "dev": "nodemon dist/src/index.js",    
     "push-heroku": "git subtree push --prefix server heroku master",
